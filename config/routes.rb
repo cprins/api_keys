@@ -8,6 +8,9 @@ Rails.application.routes.draw do
   #get 'regapi', to: 'api#new'
   # post 'regapi', to: 'api#create'
     resources :apis
+  # creacion de la ruta para conseguir duplicados
+  get  'find_dup', to: 'finddups#new'
+  post 'find_dup', to: 'finddups#result'
 
 
   # Example of regular route:

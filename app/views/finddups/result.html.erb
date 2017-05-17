@@ -1,0 +1,14 @@
+<h1 align= 'center'>Resultado</h1>
+
+<table align= 'center'>
+  <tr>
+    <th>Palabra repetida</th>
+    <th>Posiciones en donde se encuentra repetida la palabra</th>
+  </tr>
+  <% @wordposition.each do |k, v| %>
+    <tr>
+      <td> <%= k %></td>
+      <td><%= v.join(",") %></td>
+    </tr>
+  <%end %>
+</table>

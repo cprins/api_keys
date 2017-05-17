@@ -1,6 +1,6 @@
-class ApisController < ActionController::Base
+class ApisController < ApplicationController
   def index
-    
+    @apis = Api.all
   end
   
   def new

@@ -1,3 +1,18 @@
 <H1> Listado de APIS</H1>
 
-<%= link_to 'Crear API', new_api_path %>
+
+<table>
+  <tr>
+    <th>Email</th>
+    <th>Key</th>
+  </tr>
+  <% @apis.each do |api| %>
+    <tr>
+      <td> <%= api.email %></td>
+      <td><%= api.key %></td>
+    </tr>
+  <%end %>
+</table>
+
+<%= link_to 'Crear API', new_api_path %> | 
+<%= link_to 'Conseguir duplicados', find_dup_path %>
