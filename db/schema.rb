@@ -11,11 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170514232258) do
+ActiveRecord::Schema.define(version: 20170519022851) do
 
   create_table "apis", force: :cascade do |t|
-    t.string "email"
-    t.string "key"
+    t.string  "email"
+    t.string  "key"
+    t.integer "number_request", default: 0
   end
 
 end

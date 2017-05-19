@@ -6,6 +6,7 @@
       <tr>
         <th>Email</th>
         <th>Key</th>
+        <th>Numero de request</th>
       </tr>
     </thead>
     <tbody>
@@ -13,12 +14,13 @@
         <tr>
           <td> <%= api.email %></td>
           <td><%= api.key %></td>
+          <td><%= api.number_request %></td>
         </tr>
       <%end %>
     </tbody>
   </table>
 </div>
-
-
-<%= link_to 'Crear API', new_api_path %> | 
-<%= link_to 'Conseguir duplicados', find_dup_path %>
+<div class="col-xs-5 col-xs-offset-5">
+  <%= link_to 'Crear API', new_api_path %> | 
+  <%= link_to 'Conseguir duplicados', find_dup_path %>
+</div>
